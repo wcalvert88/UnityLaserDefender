@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4459889994489484}
   - component: {fileID: 212025936020080562}
   - component: {fileID: 114162913164422192}
+  - component: {fileID: 60010581876131698}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -41,6 +42,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &60010581876131698
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1778634207182970}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.99, y: 0.75}
+    newSize: {x: 0.99, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.4836572, y: 0.07962847}
+      - {x: 0.3657425, y: -0.0197711}
+      - {x: 0.125, y: 0.12724352}
+      - {x: 0.08962874, y: 0.375}
+      - {x: -0.0936572, y: 0.375}
+      - {x: -0.12231436, y: 0.125}
+      - {x: -0.35007113, y: -0.02574253}
+      - {x: -0.49499997, y: 0.095}
+      - {x: -0.46097147, y: -0.2733574}
+      - {x: -0.40231434, y: -0.20559978}
+      - {x: -0.13365716, y: -0.27798605}
+      - {x: -0.066642955, y: -0.375}
+      - {x: 0.0029146522, y: -0.3806715}
+      - {x: 0.08231432, y: -0.375}
+      - {x: 0.13631792, y: -0.27659655}
+      - {x: 0.4137994, y: -0.21127176}
+      - {x: 0.45499998, y: -0.265}
+      - {x: 0.47231442, y: -0.2550001}
 --- !u!114 &114162913164422192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,9 +97,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 0.5
+  health: 200
   laserPrefab: {fileID: 1341806660035480, guid: c340645b63bfedc469d3cb2718972059,
     type: 2}
   projectileSpeed: 20
+  projectileFiringPeriod: 0.05
 --- !u!212 &212025936020080562
 SpriteRenderer:
   m_ObjectHideFlags: 1
