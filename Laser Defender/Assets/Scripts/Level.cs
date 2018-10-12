@@ -23,6 +23,10 @@ public class Level : MonoBehaviour {
 			SceneManager.LoadScene("Game Over");
 		}
 
+		public void LoadAbout() {
+			SceneManager.LoadScene("About");
+		}
+
 		public void QuitGame() {
 			Application.Quit();
 		}

@@ -107,7 +107,7 @@ MonoBehaviour:
   projectileSpeed: 20
   projectileFiringPeriod: 0.05
   shootSound: {fileID: 8300000, guid: 28fb2e8121dcfa442b362424a14cc264, type: 3}
-  shootSoundVolume: 0.25
+  shootSoundVolume: 0.1
 --- !u!212 &212025936020080562
 SpriteRenderer:
   m_ObjectHideFlags: 1
