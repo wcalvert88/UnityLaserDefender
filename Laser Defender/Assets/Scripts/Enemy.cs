@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    [Header("Enemy")]
+    [Header("Enemy Stat")]
     [SerializeField] float health = 100;
-    [SerializeField] GameObject deathVFX;
-    [SerializeField] float durationForExplosion = 1f;
-    [SerializeField] AudioClip deathSFX;
-    [SerializeField] [Range(0,1)] float deathSoundVolume = 0.75f;
-    [Header("Projectile")]
+    [SerializeField] int scoreValue = 100;
 
+    [Header("Shooting")]
+    [SerializeField] GameObject laserPrefab;    
     [SerializeField] float shotCounter;
-    [SerializeField] GameObject laserPrefab;
     [SerializeField] float minTimeBetweenShots = 0.2f;
     [SerializeField] float maxTimeBetweenShots = 3f;
     [SerializeField] float projectileSpeed = 10f;
 
+    [Header("Sound Effects")]
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float durationForExplosion = 1f;
+    [SerializeField] AudioClip deathSFX;
+    [SerializeField] [Range(0,1)] float deathSoundVolume = 0.75f;
     [SerializeField] AudioClip shootSound;
-    [SerializeField] [Range(0,1)] float shootSoundVolume = 0.5f;
-    // Use this for initialization
+    [SerializeField] [Range(0,1)] float shootSoundVolume = 0.5f;    
+
+        // Use this for initialization
     void Start () {
         shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
 	}
@@ -70,6 +73,7 @@ public class Enemy : MonoBehaviour {
     }
 
     private void Die() {
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
         Destroy(gameObject);
         GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(explosion, durationForExplosion);

@@ -108,6 +108,7 @@ MonoBehaviour:
   durationForExplosion: 1
   deathSFX: {fileID: 8300000, guid: d39c15de8387e204889ad46c10ad0409, type: 3}
   deathSoundVolume: 0.75
+  points: 200
   shotCounter: 0
   laserPrefab: {fileID: 1016455144401276, guid: 22c74955c230ad540852a51d958372cf,
     type: 2}
