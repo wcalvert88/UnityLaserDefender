@@ -113,6 +113,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &50002640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1800556287550494, guid: 8076339b66ab17c45b2e5753830addfb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1530935546}
+--- !u!114 &50002642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50002640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc90dc87a1181c4b981e9d72b4f4ee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &128835658
 Prefab:
   m_ObjectHideFlags: 0
@@ -569,7 +585,8 @@ Prefab:
       propertyPath: m_Name
       value: Game Canvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114183312537471920, guid: 8076339b66ab17c45b2e5753830addfb, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 8076339b66ab17c45b2e5753830addfb, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1834911758
