@@ -91,12 +91,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850eb80cf2079ce4598fb8c8f39c4e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1000
+  health: 5000
   scoreValue: 500
-  laserPrefab: {fileID: 1016455144401276, guid: 37c413a16fd822245a996911295a9081,
+  laserPrefab: {fileID: 1016455144401276, guid: 054abddbe2b3a2545b0f3db6db5f1f7f,
     type: 2}
-  minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 0.6
+  minTimeBetweenShots: 1
+  maxTimeBetweenShots: 3
   projectileSpeed: 2
   deathVFX: {fileID: 1230726139289456, guid: 719a4245806c46c46b381ea57f5d37b4, type: 2}
   durationForExplosion: 1

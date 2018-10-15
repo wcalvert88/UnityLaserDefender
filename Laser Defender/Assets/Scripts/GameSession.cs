@@ -13,7 +13,6 @@ public class GameSession : MonoBehaviour {
 
 	private void SetUpSingleton() {
 		int numberGameSessions = FindObjectsOfType<GameSession>().Length;
-		Debug.Log(numberGameSessions);
 		if (numberGameSessions > 1) {
 			Destroy(gameObject);
 		} else {
@@ -27,7 +26,6 @@ public class GameSession : MonoBehaviour {
 
 	public void AddToScore(int scoreValue) {
 		score += scoreValue;
-		Debug.Log(GetScore());
 	}
 
 	public void ResetGame() {
